@@ -56,6 +56,10 @@ function Slider() {
 		return <Spinner />
 	}
 
+	if (listings.length === 0) {
+		return <></>
+	}
+
 	return (
 		listings && (
 			<>
@@ -85,8 +89,6 @@ function Slider() {
 			</>
 		)
 	)
-
-	return <div>Slider</div>
 }
 
 export default Slider
